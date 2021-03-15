@@ -1,5 +1,8 @@
-function preload(){
+noseX = 0;
+noseY = 0;
 
+function preload(){
+moustache=loadImage("https://i.postimg.cc/zBMq90gY/moustache.png");
 }
 
 function setup(){
@@ -28,6 +31,10 @@ function gotPoses(result){
 
 function draw(){
 image (video,0,0,300,300);
+    // fill(255,0,0)
+    // stroke(255,0,0)
+    // circle(noseX,noseY, 20);
+    image (moustache,noseX - 14,noseY - 5,30,30);
 }
 
 function take_snapshot(){
